@@ -11,6 +11,7 @@ class Student implements Comparable<Student> {
 	public Student(int studentNo){
 		this.studentNo = studentNo;
 	}
+	
 //	重写compareTo方法
 	public int compareTo(Student student) {
 		//定义升序排序规则

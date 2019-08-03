@@ -21,6 +21,7 @@ public class JavaSEStudy {
 		for(int i=0;i<students.length;i++) {
 			System.out.println("students["+i+"]="+students[i].studentNo);
 		}
+		ArrayDemo.outCars();
 	}
 
 }
