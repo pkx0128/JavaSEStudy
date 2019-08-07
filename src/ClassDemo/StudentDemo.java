@@ -7,7 +7,7 @@ public class StudentDemo {
 		Student student=null;
 		System.out.println("student的值为："+student);
 //		创建student对象
-		student = new Student();
+		student = new Student("pankx");
 //		输入对象的属性值
 		System.out.println("name:"+student.name+" age:"+student.age+" sex:"+student.sex);
 			
@@ -17,7 +17,7 @@ public class StudentDemo {
 		student.sex = "男";
 //		输入对象的属性值
 		System.out.println("name:"+student.name+" age:"+student.age+" sex:"+student.sex);
-	
+//		System.gc();
 	}
 
 }
