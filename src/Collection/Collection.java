@@ -18,5 +18,9 @@ public class Collection  {
 		queue.add("php");
 		QueueDemo.printQ(queue);
 		System.out.println(queue.peek());
+		
+		System.out.println("Map实例开始*****************");
+		MapDemo.getMapDemo();
+		
 	} 
 }
