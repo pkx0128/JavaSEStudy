@@ -8,5 +8,6 @@ public class Collection  {
 		SetDemo.getSetDemo();;
 		SetDemo.getLinkedHashSet();
 		SetDemo.getTreeSet();
+		ListDemo.getListDemo();
 	}
 }
