@@ -6,6 +6,7 @@ public class Collection  {
 //		int code = new SetDemo().hashCode();
 //		System.out.println(code);
 		SetDemo.getSetDemo();;
-		SetDemo.getLinkedHashSet();;
+		SetDemo.getLinkedHashSet();
+		SetDemo.getTreeSet();
 	}
 }
