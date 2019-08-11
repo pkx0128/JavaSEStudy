@@ -1,5 +1,8 @@
 package Collection;
 
+import java.util.Queue;
+import java.util.LinkedList;
+
 public class Collection  {
 	
 	public static void main(String[] agrs) {
@@ -9,5 +12,11 @@ public class Collection  {
 		SetDemo.getLinkedHashSet();
 		SetDemo.getTreeSet();
 		ListDemo.getListDemo();
-	}
+		System.out.println("队列实例开始*****************");
+		Queue  queue = new LinkedList();
+		queue.add("java");
+		queue.add("php");
+		QueueDemo.printQ(queue);
+		System.out.println(queue.peek());
+	} 
 }
