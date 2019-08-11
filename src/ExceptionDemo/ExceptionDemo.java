@@ -10,6 +10,6 @@ public class ExceptionDemo {
 //			rel = array[i];
 //			System.out.println(rel);
 //		}
-		new AssertionDemo(1,3,2);
+		new AssertionDemo(3,4,5);
 	}
 }
