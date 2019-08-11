@@ -39,7 +39,38 @@ public class CollectionsDemo {
 			System.out.println("学号："+s2.getNum()+" 姓名："+s2.getName()+" 姓别："+s2.getSex()+" 生日："+s2.getBirthday());
 		}
 		
-
+		List<Students> list2 = new ArrayList<Students>();
+		for(int j = 10;j>0;j--) {
+			Students students = new Students();
+			students.setNum((long)(j+10));
+			students.setName("xiaoming"+j);
+			if(j%2==0) {
+				students.setSex("男");
+			}else {
+				students.setSex("女");
+			}
+			students.setBirthday(new Date());
+			list2.add(students);
+		}
+		System.out.println("排序前的学生信息");
+		System.out.println("================================================");
+		Iterator<Students> iterator3 = list2.iterator();
+		while(iterator3.hasNext()) {
+			Students ss = iterator3.next();
+			System.out.println("学号："+ss.getNum()+" 姓名："+ss.getName()+" 姓别："+ss.getSex()+" 生日："+ss.getBirthday());
+		}
+//		按学号排序
+//		Collections.sort(list2,new SortToNumber());
+//		按名字排序
+		Collections.sort(list2,new SortToName());
+		System.out.println("排序后的学生信息");
+		System.out.println("================================================");
+//		使用迭代器遍历并输入list中的学生信息
+		Iterator<Students> iterator4 = list2.iterator();
+		while(iterator4.hasNext()) {
+			Students ss2 = iterator4.next();
+			System.out.println("学号："+ss2.getNum()+" 姓名："+ss2.getName()+" 姓别："+ss2.getSex()+" 生日："+ss2.getBirthday());
+		}
 	}
 	
 }
