@@ -36,6 +36,8 @@ public class DateFormatDemo {
 //		 DateFormat.getDateInstance(DateFormat.FULL) 输出格式为 2019年8月13日 星期二
 		s = DateFormat.getDateInstance(DateFormat.FULL).format(d);
 		System.out.println(s);
+		
+		SimpleDateFormatDemo.getFormatDemo();
 	}
 
 }
