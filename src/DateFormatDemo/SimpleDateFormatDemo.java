@@ -2,8 +2,12 @@ package DateFormatDemo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.text.ParseException;
+
+
 
 public class SimpleDateFormatDemo {
+//	SimpleDateFormat格式化日期实例
 	public static void getFormatDemo() {
 		Date now = new Date();
 //		显示格式为：2019年08月13日 22时57分28秒
@@ -20,5 +24,18 @@ public class SimpleDateFormatDemo {
 		System.out.println(sf4.format(now));
 		SimpleDateFormat sf5 = new SimpleDateFormat("一年中的第D天，一年中的第w周，一个月中的第W周，一天中的第k时z时区");
 		System.out.println(sf5.format(now));
+	}
+//	simpleDateFormat.parse()方法将字符串转换成日期实例
+	public static void getStringToDate() {
+		SimpleDateFormat sf6 = new SimpleDateFormat("yyyy-MM-dd");
+		Date data = null;
+			try {
+				data = sf6.parse("2019-08-07");
+			}catch(ParseException e) {
+				System.out.println("输入的字符串格式不符合要求");
+			}
+			
+			System.out.println(data);
+		
 	}
 }

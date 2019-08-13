@@ -38,6 +38,8 @@ public class DateFormatDemo {
 		System.out.println(s);
 		
 		SimpleDateFormatDemo.getFormatDemo();
+		
+		SimpleDateFormatDemo.getStringToDate();
 	}
 
 }
