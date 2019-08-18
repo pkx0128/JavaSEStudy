@@ -22,5 +22,6 @@ public class StringClassDemo {
 //		字符串常量实现String对象
 		String s4 = "这是一个字符串对象";
 		System.out.println("s4的长度"+s4.length());
+		
 	}
 }
