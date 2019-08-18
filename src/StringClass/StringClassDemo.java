@@ -27,5 +27,9 @@ public class StringClassDemo {
 		char rs = s4.charAt(0);
 		System.out.println(rs);
 		
+		
+		
+
+		
 	}
 }
