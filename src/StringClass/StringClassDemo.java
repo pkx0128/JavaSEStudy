@@ -23,5 +23,9 @@ public class StringClassDemo {
 		String s4 = "这是一个字符串对象";
 		System.out.println("s4的长度"+s4.length());
 		
+//		从一个字符串中截取一个字符charAt()方法用法
+		char rs = s4.charAt(0);
+		System.out.println(rs);
+		
 	}
 }
