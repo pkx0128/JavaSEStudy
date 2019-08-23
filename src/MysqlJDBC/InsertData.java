@@ -1,5 +1,7 @@
 package MysqlJDBC;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Connection;
 
 import java.sql.DriverManager;
@@ -9,10 +11,12 @@ import java.sql.PreparedStatement;
 public class InsertData {
 	public static void getInsertMethod() {
 		try {
-//		加载数据库驱动
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-//			获取连接对象
-			Connection cnn = DriverManager.getConnection("jdbc:mysql://localhost/spdb", "root", "Pankx0128");
+////		加载数据库驱动
+//			Class.forName("com.mysql.jdbc.Driver").newInstance();
+////			获取连接对象
+//			Connection cnn = DriverManager.getConnection("jdbc:mysql://localhost/spdb", "root", "Pankx0128");
+			MysqlConn mc = new MysqlConn("my.properties");
+			Connection cnn = mc.getConnection();
 			String sql = "INSERT INTO users(userId,username,passwd,email,grade)VALUES(?,?,?,?,?);";
 			PreparedStatement ps = cnn.prepareStatement(sql);
 			ps.setInt(1, 2);
@@ -35,6 +39,12 @@ public class InsertData {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}catch (SQLException e) {
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
